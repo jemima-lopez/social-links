@@ -2,26 +2,30 @@ body {
 
     font-family: 'Kumbh Sans', sans-serif;
     background-color: hsl(210, 11%, 4%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* full page centering */
+    margin: 0;
 }
 
-container{
+.container{
     background-color: rgb(23, 23, 30);
     border: 1px solid rgb(28, 32, 49);
-    width: 400px;
-    opacity: 0.9;
-    height: 800px;
-    margin: auto;
-    margin-top: 50px;
+    max-width: 400px;
+    width: 90%; 
+    padding: 30px 20px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: auto;   
+    margin: 15%;   
 }
 
 h1{
@@ -47,12 +51,11 @@ p{
 }
 
 .buttons{
-    list-style-type: none; 
-    margin-top: 10px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
 }
-
-
 
 button{
     width: 300px;
@@ -60,26 +63,20 @@ button{
     border-radius: 8px;
     margin-top: 20px;
     background-color: hsl(204, 7%, 13%);
-    text-justify: center;
     align-items: center;
+    text-align: center;
     color: ivory;
     border: none;
     cursor: pointer;
     justify-content: center;
-    display: flex;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-footer{
+footer, .attribution {
     color: hsl(210, 11%, 50%);
     font-size: 12px;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
-
-.attribution {
-    font-size: 11px;
-    text-align: center;}
